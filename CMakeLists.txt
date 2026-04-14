@@ -16,6 +16,6 @@ add_executable(Chess
         Chess/Rooks.cpp
         Chess/Queens.cpp)
 
-#file(COPY Chess/assets DESTINATION ${CMAKE_CURRENT_BINARY_DIR})
+file(COPY Chess/assets DESTINATION ${CMAKE_CURRENT_BINARY_DIR})
 
 target_link_libraries(Chess sfml-graphics sfml-window sfml-system)
